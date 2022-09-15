@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="TINA2" version="2022-08-30 11:06:10" app="S3D-Software 4.0.1">
+<profile name="TINA2" version="2022-08-30 14:14:33" app="S3D-Software 4.0.1">
   <baseProfile>Default</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
@@ -139,7 +139,7 @@
   <baudRateOverride>115200</baudRateOverride>
   <overridePrinterModels>0</overridePrinterModels>
   <printerModelsOverride></printerModelsOverride>
-  <startingGcode>;MachineType:TINA2,,;(**** start.gcode for tina2****),M104 S150,G28 Z,G28 X Y; Home extruder,G1 X55 Y55 F1000,G29,M107 ; Turn off fan,G90 ; Absolute positioning,M82 ; Extruder in absolute mode,M109 S[extruder0_temperature],G92 E0 ; Reset extruder position,G1 X90 Y6 Z0.27 F2000,G1 X20 Y6 Z0.27 E15 F1000,G92 E0 ; Reset extruder position</startingGcode>
+  <startingGcode>;(**** start.gcode for tina2****),M104 S150,G28 Z,G28 X Y; Home extruder,G1 X55 Y55 F1000,G29,M107 ; Turn off fan,G90 ; Absolute positioning,M82 ; Extruder in absolute mode,M109 S[extruder0_temperature],G92 E0 ; Reset extruder position,G1 X90 Y6 Z0.27 F2000,G1 X20 Y6 Z0.27 E15 F1000,G92 E0 ; Reset extruder position</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
@@ -147,7 +147,7 @@
   <exportFileFormat>gcode</exportFileFormat>
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
-  <postProcessing></postProcessing>
+  <postProcessing>{REPLACE &quot;; Settings Summary&quot; &quot;;MachineType:TINA2 \n; Settings Summary&quot;}</postProcessing>
   <defaultSpeed>2400</defaultSpeed>
   <outlineUnderspeed>0.62</outlineUnderspeed>
   <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
